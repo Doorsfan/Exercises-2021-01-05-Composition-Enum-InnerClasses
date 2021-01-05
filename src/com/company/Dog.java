@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * A nested Class, named Dog - with a nested class called Tail and a Enum, called Breed
+ * A nested Class, named Dog - with a class called Tail and a Enum, called Breed
  */
 public class Dog {
     /**
