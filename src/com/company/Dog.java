@@ -8,12 +8,11 @@ import java.util.Random;
  * A nested Class, named Dog - with a nested class called Tail and a Enum, called Breed
  */
 public class Dog {
-    //Enums are, internally, classes that declare their variables with Static Final, meaning the values can't
-    //be changed once declared - and only have one incarnation of them, per Enum object
-
     /**
      * The enum that is responsible for creating each breed of the Dog
      */
+    //Enums are, internally, classes that declare their variables with Static Final, meaning the values can't
+    //be changed once declared - and only have one incarnation of them, per Enum object
     private enum Breed {
         BEAGLE, TAX, GREYHOUND, DOBERMANN, ROTTWEILER; //Will create a BEAGLE enum, TAX enum, GREYHOUND enum, etc.
         //These above could be considered as being written as:
@@ -59,14 +58,13 @@ public class Dog {
     private Breed breed;
     private Tail myTail;
 
-    //Basic constructor for the Dog
-
     /**
      *
      * @param name A string, the name of the dog
      * @param breed A string, fed into the Breed Enum to create a Static Final object of this name
      * @param tailNickName A string, the nickname for the Tail
      */
+    //Basic constructor for the Dog
     public Dog(String name, String breed, String tailNickName){
         this.name = name;
         this.breed = Breed.valueOf(breed.toUpperCase()); //When we use an Enum, we have to denote with <Enum name>.valueOf(<input>.toUpperCase())
@@ -88,11 +86,10 @@ public class Dog {
         return this.breed.getBreed();
     }
 
-    //A nested class, the tail for the Dog
-
     /**
      * The nested class within Dog, that keeps track of it's owner and it's nickname
      */
+    //A nested class, the tail for the Dog
     public class Tail {
         private Dog owner; //The owner of the Tail
         private String nickName; //The tail's nickname
