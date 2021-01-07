@@ -53,6 +53,10 @@ public class Dog {
             return this.mixedWith;
         }
 
+        /**
+         * The enum responsible for behavioral type of each respective behavioral profile.
+         * Implements the Animal interface.
+         */
         // This nested Enum implements the Animal interface - an Abstract class. A Enum cannot inherit, as in
         // extend other Classes - but it can inherit from abstract interfaces that allows for implementation of
         // inherited methods from said Interface.
@@ -103,7 +107,7 @@ public class Dog {
             }
 
             /**
-             * A simple method to showcase usage of both accessing Enum nam with super.name() and implement a method from
+             * A simple method to showcase usage of both accessing Enum name with super.name() and implement a method from
              * an abstract interface
              */
             public void run(){
@@ -115,11 +119,14 @@ public class Dog {
     //Since Enums are Static, to reference a variable in the same class but not within the Enum itself, we have
     //to declare this variable as Static - to be able to access it
     private static String name;
+
+
     private Breed breed;
     private Tail myTail;
     private Breed.behavioralType behavioralType;
 
     /**
+     * A basic class that acts as a representation of a Dog. Has a nested class called Tail.
      *
      * @param name A string, the name of the dog
      * @param breed A string, fed into the Breed Enum to create a Static Final object of this name
