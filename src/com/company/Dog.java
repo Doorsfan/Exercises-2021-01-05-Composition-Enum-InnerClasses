@@ -32,7 +32,7 @@ public class Dog {
         //theBreeds.add("Tax") etc.
 
         //Choose a number of breeds, in a range of 1-3 (inclusive)
-        int amountOfBreeds = random.ints(1, 3).findFirst().getAsInt();
+        int amountOfBreeds = random.ints(1, 4).findFirst().getAsInt();
         //Here, we can use the Constructor to handle how the Enum should be created
         private Breed()
         {
@@ -68,6 +68,7 @@ public class Dog {
             HUNTING_DOG(10, 3, 3, 5, 6),
             GUARD_DOG(8, 1, 1, 8, 8);
 
+            //The constructor is built in the same order as the variables are declared
             int senseOfSmell, kindness, playfulness, aggression, energy;
 
             behavioralType(int senseOfSmell, int kindness, int playfulness, int aggression, int energy){
