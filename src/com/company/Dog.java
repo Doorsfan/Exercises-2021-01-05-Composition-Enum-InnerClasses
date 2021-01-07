@@ -91,17 +91,17 @@ public class Dog {
                 switch(this){
                     case SHEEPHERDER:
                         return "I am a Sheepherder. I have a lot of energy, i run a lot and like to play around a lot." +
-                                " If no-one goes out with me a lot, i might eat your furniture or annoy your other dog(s).";
+                                "\n If no-one goes out with me a lot, i might eat your furniture or annoy your other dog(s).";
                     case NARCOTICS_DOG:
-                        return "I am a Narcotics Dog. I work for the police in helping sniffing out contraband and tracking missing people." +
+                        return "I am a Narcotics Dog. I work for the police in helping sniffing out contraband and tracking\n missing people." +
                                 "I have an excellent sense of smell and a strong sense of duty.";
                     case FAMILY_DOG:
                         return "I am a Family Dog. I really love my owners, have a long patience and i like to play with people.";
                     case HUNTING_DOG:
-                        return "I am a Hunting Dog. I have an excellent sense of smell and a strong hunting instinct. I aid hunters" +
+                        return "I am a Hunting Dog. I have an excellent sense of smell and a strong hunting instinct.\n I aid hunters" +
                                 "in tracking prey.";
                     case GUARD_DOG:
-                        return "I am a Guard Dog. I watch over my owners, protect my property and am not very fond of" +
+                        return "I am a Guard Dog. I watch over my owners, protect my property and am not very fond of\n" +
                                 "people i do not trust. I can be very intimidating - barking and maybe even biting.";
                 }
                 return "I am a Dog - but i don't have much to tell about myself.";
